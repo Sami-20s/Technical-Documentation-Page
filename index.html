@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- POPINS FONT LINK -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- ALGEREYA FONT LINK -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <!-- ROBOTO LINK -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- TITLE -->
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>Sass</h1>
+            <hr>
+        </header>
+        <div class="bar">
+            
+            <ul>
+                <li><h2><a href="#what-is-sass" class="nav-link">What is Sass?</a></h2></li><hr>            
+                <li><h2><a href="#why-use-sass" class="nav-link">Why Use Sass?</a></h2></li><hr>
+                <li><h2><a href="#sass-variables" class="nav-link">Sass Variables</a></h2></li><hr>
+                <li><h2><a href="#sass-nested-rules" class="nav-link">Sass Nested Rules</a></h2></li><hr>
+                <li><h2><a href="#sass-import" class="nav-link">Sass @import</a></h2></li><hr>
+            </ul>
+        </div>
+            
+    </nav>
+    <main id="main-doc">
+        <!-- AT LEAST 10 PARGRAPGHS TOTAL -->
+        <!-- AT LEAST 5 CODE ELEMENT TOTOAL -->
+        <!-- AL LEAST 5 LI ELEMENT TOTOAL -->
+        <!--TODO     WHAT IS SASS?       -->
+        <section class="main-section" id="what-is-sass">
+            <header>
+                <h2>What is Sass?</h2>
+            </header>
+            <ul>
+                <li>Sass stands for Syntactically Awesome Stylesheet</li>
+                <li>Sass is an extension to CSS</li>
+                <li>Sass is a CSS pre-processor</li>
+                <li>Sass is completely compatible with all versions of CSS</li>
+                <li>Sass reduces repetition of CSS and therefore saves time</li>
+                <li>Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006</li>
+                <li>Sass is free to download and use</li>
+            </ul>
+        </section>
+        <!--TODO     WHY USE SASS?       -->
+        <section class="main-section" id="why-use-sass">
+            <header>
+                <h2>Why Use Sass?</h2>
+            </header>
+            <p>Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.</p>
+            <p>Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.</p>
+            <h4>Sass Example:</h4>
+            <div id="example-one">
+                <code >
+                    <p>$primary_1: #a2b9bc;</p>
+                    <p>$primary_1: #a2b9bc;</p>
+                    <p>$primary_3: #878f99;</p><br>
+                    <p>.main-header { background-color: $primary_1; }</p>
+                    <p>.menu-left { background-color: $primary_2; }</p>
+                    <p>.menu-right { background-color: $primary_3; }</p>
+                </code>
+            </div>
+        </section>
+        <!--TODO     SASS VARIABLES       -->
+        <section class="main-section" id="sass-variables">
+            <header>
+                <h2>Sass Variables</h2>
+            </header>
+            <p>Variables are a way to store information that you can re-use later.</p>
+            <p>With Sass, you can store information in variables, like:</p>
+            <ul>
+                <li>strings</li>
+                <li>numbers</li>
+                <li>colors</li>
+                <li>booleans</li>
+                <li>lists</li>
+                <li>nulls</li>
+            </ul>
+            <h4>Variable Example:</h4>
+            <div id="example-two">
+                <code >
+                    <p>$myFont: Helvetica, sans-serif;</p>
+                    <p>$myColor: red;</p>
+                    <p>$myFontSize: 18px;</p>
+                    <p>$myWidth: 680px;</p><br>
+                    <p>body { font-family: $myFont; font-size: $myFontSize; color: $myColor; }</p>
+                    <p>#container { width: $myWidth; }</p>
+                </code>
+            </div>
+        </section>
+        <!--TODO     SASS NESTED RULES       -->
+        <section class="main-section" id="sass-nested-rules">
+            <header>
+                <h2>Sass Nested Rules</h2>
+            </header>
+            <p>Sass lets you nest CSS selectors in the same way as HTML.</p>
+            <p>Look at an example of some Sass code for a site's navigation:</p>
+            <div id="example-three"></div>
+            <code >
+                <p>nav {</p>
+                    <p>ul { margin: 0; padding: 0; list-style: none; }</p>
+                    <p>li { display: inline-block; }</p>
+                    <p>a { display: block; padding: 6px 12px; text-decoration: none; }</p>
+                <p>}</p>
+            </code>
+        </section>
+        <!--TODO     SASS IMPORT       -->
+        <section class="main-section" id="sass-import">
+            <header>
+                <h2>Sass @import</h2>
+            </header>
+            <p>Sass keeps the CSS code DRY (Don't Repeat Yourself). One way to write DRY code is to keep related code in separate files.</p>
+            <p>You can create small files with CSS snippets to include in other Sass files. Examples of such files can be: reset file, variables, colors, fonts, font-sizes, etc.</p>
+            <h4>Import Example</h4>
+            <div id="example-four">
+                <code>
+                    <p>@import "variables";</p>
+                    <p>@import "colors";</p>
+                    <code><p>@import "reset";</p></code>
+                </code>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
